@@ -165,7 +165,7 @@ Illuminate\Routing\Controller
 		<b>Namespace:</b> <a href="namespace-App.html">App</a>\<a href="namespace-App.Http.html">Http</a>\<a href="namespace-App.Http.Controllers.html">Controllers</a><br>
 		
 
-			<b>Located at</b> <a href="source-class-App.Http.Controllers.HomeController.html#10-185" title="Go to source code">Http/Controllers/HomeController.php</a>
+			<b>Located at</b> <a href="source-class-App.Http.Controllers.HomeController.html#10-226" title="Go to source code">Http/Controllers/HomeController.php</a>
 		<br>
 	</div>
 
@@ -242,24 +242,28 @@ Illuminate\Routing\Controller
 		<td class="attributes"><code>
 			 public 
 
-			
+			array|string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_loadTasks">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#35-78" title="Go to source code">loadTasks</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#35-82" title="Go to source code">loadTasks</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Get a ToDo's id and load its task from DB order by 'sort' field</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Get a ToDo's id and load its task from DB order by 'sort' field</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					array|string
+				</div>
 
 
 
@@ -279,14 +283,14 @@ Illuminate\Routing\Controller
 
 		<td class="name"><div>
 		<a class="anchor" href="#_updateSortTodo">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#80-87" title="Go to source code">updateSortTodo</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#84-94" title="Go to source code">updateSortTodo</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Get id of a ToDo list and it's defined 'sort' field and update 'sort' field</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Get id of a ToDo list and it's defined 'sort' field and update 'sort' field</p>
 
 
 
@@ -302,24 +306,30 @@ Illuminate\Routing\Controller
 		<td class="attributes"><code>
 			 public 
 
-			
+			string
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_sortTodos">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#89-102" title="Go to source code">sortTodos</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#96-114" title="Go to source code">sortTodos</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Load a list of sorted ToDo lists.
+This is run by clicking on 'tick' symbole on top of the Todo's panel</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Load a list of sorted ToDo lists.
+This is run by clicking on 'tick' symbole on top of the Todo's panel</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
 
 
 
@@ -332,24 +342,33 @@ Illuminate\Routing\Controller
 		<td class="attributes"><code>
 			 public 
 
-			
+			mixed
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_newTodo">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#104-117" title="Go to source code">newTodo</a>( <span>Illuminate\Http\Request <var>$request</var></span> )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#116-134" title="Go to source code">newTodo</a>( <span>Illuminate\Http\Request <var>$request</var></span> )</code>
 
 		<div class="description short">
-			
+			<p>Define a new ToDO list</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Define a new ToDO list</p>
 
 
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$request</var></dt>
+					<dd></dd>
+				</dl></div>
 
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
 
 
 
@@ -369,14 +388,14 @@ Illuminate\Routing\Controller
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deleteTodo">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#119-123" title="Go to source code">deleteTodo</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#136-143" title="Go to source code">deleteTodo</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Delete a selected ToDO</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Delete a selected ToDO</p>
 
 
 
@@ -392,24 +411,30 @@ Illuminate\Routing\Controller
 		<td class="attributes"><code>
 			 public 
 
-			
+			integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cancelTodo">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#125-142" title="Go to source code">cancelTodo</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#145-167" title="Go to source code">cancelTodo</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Cancel a ToDO of course it's Tasks by set 'status' field value to '2'
+2 DB commands along a Transaction</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Cancel a ToDO of course it's Tasks by set 'status' field value to '2'
+2 DB commands along a Transaction</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
 
 
 
@@ -429,14 +454,14 @@ Illuminate\Routing\Controller
 
 		<td class="name"><div>
 		<a class="anchor" href="#_cancelTask">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#144-150" title="Go to source code">cancelTask</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#169-178" title="Go to source code">cancelTask</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Cancel a Task by set 'status' field value to '2'</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Cancel a Task by set 'status' field value to '2'</p>
 
 
 
@@ -452,24 +477,32 @@ Illuminate\Routing\Controller
 		<td class="attributes"><code>
 			 public 
 
-			
+			integer
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_doneTask">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#152-170" title="Go to source code">doneTask</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#180-204" title="Go to source code">doneTask</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Done a ToDO list when one of it's Task is done.
+By set 'status' fields value to '1'
+2 DB commands along a Transaction</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Done a ToDO list when one of it's Task is done.
+By set 'status' fields value to '1'
+2 DB commands along a Transaction</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
 
 
 
@@ -489,14 +522,14 @@ Illuminate\Routing\Controller
 
 		<td class="name"><div>
 		<a class="anchor" href="#_deletetask">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#172-176" title="Go to source code">deletetask</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#206-213" title="Go to source code">deletetask</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Delete a selected Task</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Delete a selected Task</p>
 
 
 
@@ -512,24 +545,28 @@ Illuminate\Routing\Controller
 		<td class="attributes"><code>
 			 public 
 
-			
+			Illuminate\Contracts\View\Factory|Illuminate\View\View
 			
 			</code>
 		</td>
 
 		<td class="name"><div>
 		<a class="anchor" href="#_newTask">#</a>
-		<code><a href="source-class-App.Http.Controllers.HomeController.html#178-184" title="Go to source code">newTask</a>( )</code>
+		<code><a href="source-class-App.Http.Controllers.HomeController.html#215-225" title="Go to source code">newTask</a>( )</code>
 
 		<div class="description short">
-			
+			<p>Show a new 'View' (page) to define a new task.</p>
 		</div>
 
 		<div class="description detailed hidden">
-			
+			<p>Show a new 'View' (page) to define a new task.</p>
 
 
 
+				<h4>Returns</h4>
+				<div class="list">
+					Illuminate\Contracts\View\Factory|Illuminate\View\View
+				</div>
 
 
 
